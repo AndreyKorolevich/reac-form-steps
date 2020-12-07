@@ -2,7 +2,7 @@ import Walk from "./Walk";
 
 function ListWalks({walks, deleteWalk}) {
     let sortWalks;
-    if(walks.length > 0) sortWalks = walks.sort((a,b) => a.date - b.date)
+    if(walks.length > 0) sortWalks = walks.sort((a,b) => b.date - a.date)
     else return(<></>);
 
     return (
